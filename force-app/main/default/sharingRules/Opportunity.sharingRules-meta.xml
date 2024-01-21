@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>inside_sales_acess</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>inside sales acess</label>
+        <sharedTo>
+            <group>inside_sales_team_members</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>inside_sales_team_members</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

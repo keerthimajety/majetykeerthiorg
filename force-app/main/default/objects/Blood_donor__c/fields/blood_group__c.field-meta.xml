@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>blood_group__c</fullName>
+    <externalId>false</externalId>
+    <label>blood group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>O POSITIVE</fullName>
+                <default>false</default>
+                <label>O POSITIVE</label>
+            </value>
+            <value>
+                <fullName>O NEGETIVE</fullName>
+                <default>false</default>
+                <label>O NEGETIVE</label>
+            </value>
+            <value>
+                <fullName>A POSITIVE</fullName>
+                <default>false</default>
+                <label>A POSITIVE</label>
+            </value>
+            <value>
+                <fullName>A NEGETIVE</fullName>
+                <default>false</default>
+                <label>A NEGETIVE</label>
+            </value>
+            <value>
+                <fullName>B POSITIVE</fullName>
+                <default>false</default>
+                <label>B POSITIVE</label>
+            </value>
+            <value>
+                <fullName>B NEGETIVE</fullName>
+                <default>false</default>
+                <label>B NEGETIVE</label>
+            </value>
+            <value>
+                <fullName>AB POSITIVE</fullName>
+                <default>false</default>
+                <label>AB POSITIVE</label>
+            </value>
+            <value>
+                <fullName>AB NEGETIVE</fullName>
+                <default>false</default>
+                <label>AB NEGETIVE</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

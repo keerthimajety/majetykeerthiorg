@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>District__c</fullName>
+    <externalId>false</externalId>
+    <label>District</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>state__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>vellore</fullName>
+                <default>false</default>
+                <label>vellore</label>
+            </value>
+            <value>
+                <fullName>chennai</fullName>
+                <default>false</default>
+                <label>chennai</label>
+            </value>
+            <value>
+                <fullName>nagapattinam</fullName>
+                <default>false</default>
+                <label>nagapattinam</label>
+            </value>
+            <value>
+                <fullName>erode</fullName>
+                <default>false</default>
+                <label>erode</label>
+            </value>
+            <value>
+                <fullName>west godavari</fullName>
+                <default>false</default>
+                <label>west godavari</label>
+            </value>
+            <value>
+                <fullName>east godavari</fullName>
+                <default>false</default>
+                <label>east godavari</label>
+            </value>
+            <value>
+                <fullName>ongole</fullName>
+                <default>false</default>
+                <label>ongole</label>
+            </value>
+            <value>
+                <fullName>nellore</fullName>
+                <default>false</default>
+                <label>nellore</label>
+            </value>
+            <value>
+                <fullName>mysore</fullName>
+                <default>false</default>
+                <label>mysore</label>
+            </value>
+            <value>
+                <fullName>bangalore</fullName>
+                <default>false</default>
+                <label>bangalore</label>
+            </value>
+            <value>
+                <fullName>vijayanagara</fullName>
+                <default>false</default>
+                <label>vijayanagara</label>
+            </value>
+            <value>
+                <fullName>belagavi</fullName>
+                <default>false</default>
+                <label>belagavi</label>
+            </value>
+            <value>
+                <fullName>kannur</fullName>
+                <default>false</default>
+                <label>kannur</label>
+            </value>
+            <value>
+                <fullName>tiruvananthapuram</fullName>
+                <default>false</default>
+                <label>tiruvananthapuram</label>
+            </value>
+            <value>
+                <fullName>wayanad</fullName>
+                <default>false</default>
+                <label>wayanad</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>vellore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>chennai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>nagapattinam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>erode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>andhra pradesh</controllingFieldValue>
+            <valueName>west godavari</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>andhra pradesh</controllingFieldValue>
+            <valueName>east godavari</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>andhra pradesh</controllingFieldValue>
+            <valueName>ongole</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>andhra pradesh</controllingFieldValue>
+            <valueName>nellore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>karnataka</controllingFieldValue>
+            <valueName>mysore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>karnataka</controllingFieldValue>
+            <valueName>bangalore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>karnataka</controllingFieldValue>
+            <valueName>vijayanagara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>karnataka</controllingFieldValue>
+            <valueName>belagavi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>kerala</controllingFieldValue>
+            <valueName>kannur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>kerala</controllingFieldValue>
+            <valueName>tiruvananthapuram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>kerala</controllingFieldValue>
+            <valueName>wayanad</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

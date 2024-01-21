@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>andaman and nicobar islands</fullName>
+        <default>false</default>
+        <label>andaman and nicobar islands</label>
+    </customValue>
+    <customValue>
+        <fullName>andhra pradesh</fullName>
+        <default>false</default>
+        <label>andhra pradesh</label>
+    </customValue>
+    <customValue>
+        <fullName>arunachal pradesh</fullName>
+        <default>false</default>
+        <label>arunachal pradesh</label>
+    </customValue>
+    <customValue>
+        <fullName>assam</fullName>
+        <default>false</default>
+        <label>assam</label>
+    </customValue>
+    <customValue>
+        <fullName>bihar</fullName>
+        <default>false</default>
+        <label>bihar</label>
+    </customValue>
+    <customValue>
+        <fullName>goa</fullName>
+        <default>false</default>
+        <label>goa</label>
+    </customValue>
+    <customValue>
+        <fullName>haryana</fullName>
+        <default>false</default>
+        <label>haryana</label>
+    </customValue>
+    <customValue>
+        <fullName>jammu and kashmir</fullName>
+        <default>false</default>
+        <label>jammu and kashmir</label>
+    </customValue>
+    <customValue>
+        <fullName>karnataka</fullName>
+        <default>false</default>
+        <label>karnataka</label>
+    </customValue>
+    <customValue>
+        <fullName>kerala</fullName>
+        <default>false</default>
+        <label>kerala</label>
+    </customValue>
+    <customValue>
+        <fullName>madhya pradesh</fullName>
+        <default>false</default>
+        <label>madhya pradesh</label>
+    </customValue>
+    <customValue>
+        <fullName>maharashtra</fullName>
+        <default>false</default>
+        <label>maharashtra</label>
+    </customValue>
+    <customValue>
+        <fullName>manipal</fullName>
+        <default>false</default>
+        <label>manipal</label>
+    </customValue>
+    <customValue>
+        <fullName>pondicherry</fullName>
+        <default>false</default>
+        <label>pondicherry</label>
+    </customValue>
+    <customValue>
+        <fullName>punjab</fullName>
+        <default>false</default>
+        <label>punjab</label>
+    </customValue>
+    <customValue>
+        <fullName>tamil nadu</fullName>
+        <default>false</default>
+        <label>tamil nadu</label>
+    </customValue>
+    <customValue>
+        <fullName>uttaqr pradesh</fullName>
+        <default>false</default>
+        <label>uttaqr pradesh</label>
+    </customValue>
+    <customValue>
+        <fullName>uttarakhand</fullName>
+        <default>false</default>
+        <label>uttarakhand</label>
+    </customValue>
+    <description>state/teritiary</description>
+    <masterLabel>STATE TERRITORY</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

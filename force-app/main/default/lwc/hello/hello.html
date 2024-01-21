@@ -1,0 +1,34 @@
+<!---
+<template>
+    hello,this is new lwc component.
+    <h1>welcome to html</h1>
+    <p>
+
+        please click the image.<br/>
+        <a href="https://www.google.com"> <img src="data:image/jpeg;base64,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" alt ="cat image" width ="40"  height ="40"></img></a>
+
+        </p>
+        <h1><b>standard style</b></h1>     
+  <div class="div">
+    lwc first component.lwc first component.lwc first component.lwc first component.lwc first component.lwc first component.
+    lwc first component.lwc first component.lwc first component.lwc first component.lwc first component.
+  </div>
+  <p title ="Custom style with borders and marigin"><b>Custom style </b></p>
+  <div class ="custom">
+    lwc first component.lwc first component.lwc first component.lwc first component.lwc first component.lwc first component.
+    lwc first component.lwc first component.lwc first component.lwc first component.lwc first component.
+  </div>
+  <ul>
+    <li>orange</li>
+    <li>apple</li>
+    <li>starwberry</li>
+</ul>
+</template>-->
+
+<template>
+  {result} 
+   <lightning-card  title=" practice">
+    <lightning-input type="text" data-id1="A"></lightning-input>
+      <lightning-button data-btn="bt1" data-btn2="button2" variant="brand" label="click" onclick={handleclick}></lightning-button>
+   </lightning-card>
+</template>

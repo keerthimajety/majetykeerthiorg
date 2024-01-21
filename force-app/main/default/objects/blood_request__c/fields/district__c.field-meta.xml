@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>district__c</fullName>
+    <externalId>false</externalId>
+    <label>district</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>STATE_TERRITORY__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>district</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>Ariyalur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>chenagalpattu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>chennai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>coimbatore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>cuddalore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>dharmapuri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>dindugal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>erode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>kallakurichi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>kancheevaram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>karoor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>kirshnagiri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>namakkal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>perambur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>pudukottai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>ramanthapuram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>ranipet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>salem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>sivagangai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>tanjavur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>tenkasi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>theni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>The Nilgiris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>thirunelveli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>thiruppur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>thiruvallur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>thiruvavur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>tirupathur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>tiruvannamalai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>tricchirapalli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>tuticorin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>vellore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>viluppuram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>tamil nadu</controllingFieldValue>
+            <valueName>virudhunagar</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

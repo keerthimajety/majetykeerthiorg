@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Case study 6 search account records">
+
+     
+      <lightning-input type="text" label="Enter the text" onchange={handlechange1}></lightning-input>
+        <template if:true={accountList} >
+            <template for:each={accountList} for:item="account">
+                <div class="slds-var-m-around_medium" key={account.Id}>
+                    {account.Name}<br/>
+                    
+                    {account.BillingState}<br/>
+                    {account.Id}
+                  <!--  <lightning-button label="Delete" name={account.Id) variant="brand" onclick={handledelete}></lightning-button>-->
+                </div>
+            </template>
+        </template>
+       
+    </lightning-card>
+    
+    
+</template>

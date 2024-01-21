@@ -1,0 +1,18 @@
+.style1
+{
+    font-style :italic;
+    color : red
+
+}
+.style2
+{
+    font-style :oblique;
+    color : green
+
+}
+.style3
+{
+    font-style :oblique ;
+    color : blueviolet
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>enter_the_capacity_for_wm</fullName>
+    <active>true</active>
+    <description>show error if the capacity is empty for wasing machine</description>
+    <errorConditionFormula>( ISPICKVAL( model__c , &apos;SWM001&apos;)  || 
+ISPICKVAL( model__c , &apos;SWM002&apos;) || 
+ISPICKVAL( model__c , &apos;SWM003&apos;) || 
+ISPICKVAL( model__c ,&apos; LWM001&apos;) || 
+ISPICKVAL( model__c , &apos;LWM002&apos;) || 
+ISPICKVAL( model__c , &apos;LWM003l&apos;) || 
+ISPICKVAL( model__c ,&apos; HWM001&apos;) || 
+ISPICKVAL( model__c , &apos;HWM002&apos;) || 
+ISPICKVAL( model__c ,&apos; HWM003&apos;) ) &amp;&amp;  ISBLANK(  capacity_in_kgs__c  )</errorConditionFormula>
+    <errorMessage>Enter the capacity in kgs for washing machine</errorMessage>
+</ValidationRule>

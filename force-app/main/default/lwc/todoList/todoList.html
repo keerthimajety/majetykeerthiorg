@@ -1,0 +1,46 @@
+<template>
+    <lightning-card title="To Do List" style="width: 100%;">
+        <lightning-layout  >
+            <lightning-layout-item size="12" padding="around-small">
+                <ul class="slds-has-dividers_around-space">
+                   <template for:each={Tasktodo} for:item="singletask">
+                    <li class="slds-item" key={singletask.id}>
+                            
+                        <lightning-layout vertical-align="center" horizontal-align="spread">
+                            <lightning-layout-item padding="horizontal-large">
+                              singletask.name
+                            </lightning-layout-item>
+                            <lightning-layout-item >
+                                <lightning-button-icon icon-name="utility:delete" alternative-text="Delete task" name={singletask.id} onclick={handleiconclick}></lightning-button-icon>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                       </li>
+                      
+
+                   </template>
+                       
+                  
+                    
+                   
+                </ul>
+            </lightning-layout-item>
+        </lightning-layout>
+   
+    <p slot="footer">
+       <lightning-layout pull-to-boundary="small">
+         <lightning-layout-item flexibility="auto" padding="horizontal-small">
+        <lightning-input type="text" placeholder="enter the task" variant="label-hidden" value={task} onchange={handlechange}>
+
+        </lightning-input>
+    </lightning-layout-item>
+        
+         <lightning-layout-item >
+            <lightning-button label="Add " variant ="brand" onclick={handleClick}></lightning-button>
+         </lightning-layout-item>
+
+       </lightning-layout>
+    
+    </p>
+
+    </lightning-card>
+</template>

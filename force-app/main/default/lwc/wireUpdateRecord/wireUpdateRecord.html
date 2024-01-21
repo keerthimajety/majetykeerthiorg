@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="day21 diy update record">
+
+        <lightning-input label="RecordId" name="RecordId" type="text" onchange={handlechange0}></lightning-input>
+        <lightning-input label="Name" name="Name" type="text" onchange={handlechange1}></lightning-input>
+        <lightning-combobox 
+        name="Picklistvalues"
+label="Industry"
+value={value1}
+placeholder="Picklist values"
+options={PicklistOptions}
+onchange={handleChange} ></lightning-combobox>
+        <lightning-input label="Revenue" name="AnnualRevenue" type="text" onchange={handlechange}></lightning-input>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,16 @@
+<template>
+        <Lightning-card title="CaseStudy 7 CreateReceipt">
+        <lightning-button
+            onclick={handleClick}
+            aria-haspopup="dialog"
+            label="Create Receipt">
+            variant ="brand"
+        </lightning-button>
+        <lightning-datatable 
+
+        key-field ="Id"
+        columns ={coloumnList}
+        data ={ReceiptList.data}></lightning-datatable>
+       
+    </Lightning-card>
+    </template>

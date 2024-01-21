@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>chennai</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>chennai dst cs</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>tamilnadu_state_level_customer_support</parentRole>
+</Role>

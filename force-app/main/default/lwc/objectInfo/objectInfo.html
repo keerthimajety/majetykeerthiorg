@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="object info">
+        <template if:true={fieldNames}>
+            <ul>
+                
+                    <template for:each ={fieldNames} for:item="fieldname">
+                        <li class="slds-item" key={fieldname}>
+                        {fieldname}
+                    </li>
+                        </template>
+                    
+                
+            </ul>
+       
+       Accountobject Info :<br/>
+       No of Picklistfields  :{picklistcount}<br/>
+       No of Custom fields   :{customfieldcount}<br/>
+       No of total Fields    :{Count}<br/>
+
+        </template>
+    </lightning-card>
+</template>

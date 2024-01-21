@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>days_left_to_donate__c</fullName>
+    <description>gives the number of days left to donate blood again</description>
+    <externalId>false</externalId>
+    <formula>IF((TODAY()  - Last_Donated_Date__c) &gt; 90,0,90  -  (TODAY()  - Last_Donated_Date__c) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>days left to donate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

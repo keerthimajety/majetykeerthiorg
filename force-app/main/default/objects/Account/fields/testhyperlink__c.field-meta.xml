@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>testhyperlink__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://www.google.com&quot;, &quot;Googlesearch&quot;,&quot;__blank&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>testhyperlink</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>mobile_number_length</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(REGEX( mobile_number__c ,&quot;[a-z,A-Z]{1}[0-9]{5}&quot;))</errorConditionFormula>
+    <errorMessage>mobile number should be 10 digits</errorMessage>
+</ValidationRule>

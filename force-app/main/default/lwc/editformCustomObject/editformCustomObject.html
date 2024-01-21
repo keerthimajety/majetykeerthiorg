@@ -1,0 +1,29 @@
+<template>
+
+    <lightning-card title="Blood request edit form">
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form object-api-name="blood_request__c"  onsuccess={handlesuccess} onsubmit={handlesubmit} onerror={handleerror}>
+            <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_12-of-12">
+             <lightning-input-field field-name="attender_contact_NO__c" ></lightning-input-field>
+             <lightning-input-field field-name="Name"></lightning-input-field>
+             <lightning-input-field field-name="attender_name__c"></lightning-input-field>
+             <lightning-input-field field-name="patient_name__c" class="cpname"></lightning-input-field>
+             <lightning-input-field field-name="district__c"></lightning-input-field>
+             <lightning-input-field field-name="STATE_TERRITORY__c"></lightning-input-field>  
+            
+            <lightning-button label="cancel" type="reset" variant="brand"></lightning-button>
+            <lightning-button label="save" type="submit" variant="brand"></lightning-button>
+            </div>
+          
+
+        </div>
+        
+</lightning-record-edit-form>
+        
+    </div>
+    </lightning-card>
+    
+</template>
+
+<!--record-id="a015g00000wYc7PAAS"-->

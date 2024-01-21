@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="To Do Tasks">
+        <template for:each={Todotask} for:item="singletask">
+         <div key={singletask.id}>
+        <lightning-layout>
+      
+            <lightning-layout-item >
+                {singletask}
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-icon icon-name="utility:delete" alternative-text="Delete task" ></lightning-icon>
+
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+    </template>
+
+    <div slot="footer">
+        <lightning-layout>
+            <lightning-layout-item>
+                <lightning-input varient ="label-hidden"  name="inputbox" type="text"  value ={inputboxtext} onchange ={handlechange}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-button variant="brand" label="Add task" title="enter the task" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+
+    </lightning-card>
+</template>

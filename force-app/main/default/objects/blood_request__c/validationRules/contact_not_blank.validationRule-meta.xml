@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>contact_not_blank</fullName>
+    <active>true</active>
+    <description>If attender name is present the contact number should not be blank</description>
+    <errorConditionFormula>NOT(ISBLANK( attender_name__c ))  &amp;&amp; ISBLANK( attender_contact_NO__c )</errorConditionFormula>
+    <errorMessage>the contact number should not be blank</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eligible_for_blood_donation__c</fullName>
+    <description>checks wether the person is eligible to donate the blood</description>
+    <externalId>false</externalId>
+    <formula>IF( age__c  &gt; 18 &amp;&amp;  weight__c  &gt; 50&amp;&amp; (MONTH( TODAY() ) - MONTH( Last_Donated_Date__c ))&gt;3    ,true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>eligible for blood donation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

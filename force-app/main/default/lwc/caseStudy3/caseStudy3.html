@@ -1,0 +1,11 @@
+<template>
+    
+    <lightning-card title="Casestudy3 Contact List in this account">
+     <lightning-button label="Click" variant="brand" onclick={handleclick}></lightning-button>
+        <lightning-datatable 
+
+          key-field ="Id"
+          columns ={coloumnList}
+          data ={ContactList.data}></lightning-datatable>
+    </lightning-card>
+</template>

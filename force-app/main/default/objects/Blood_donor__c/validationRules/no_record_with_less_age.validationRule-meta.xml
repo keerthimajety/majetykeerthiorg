@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>no_record_with_less_age</fullName>
+    <active>true</active>
+    <description>no record is saved with age less than 18</description>
+    <errorConditionFormula>age__c &lt;18</errorConditionFormula>
+    <errorMessage>the age should not be less than 18</errorMessage>
+</ValidationRule>

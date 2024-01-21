@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>enter_screen_size_for_TV</fullName>
+    <active>true</active>
+    <description>show error if the screen size is not enterd for the TV model</description>
+    <errorConditionFormula>( ISPICKVAL( model__c , &apos;STV001&apos;)  || 
+ISPICKVAL( model__c , &apos;STV002&apos;) || 
+ISPICKVAL( model__c , &apos;STV003&apos;) || 
+ISPICKVAL( model__c ,&apos; LTV001&apos;) || 
+ISPICKVAL( model__c , &apos;LTV002&apos;) || 
+ISPICKVAL( model__c , &apos;LTV003l&apos;) || 
+ISPICKVAL( model__c ,&apos; HTV001&apos;) || 
+ISPICKVAL( model__c , &apos;HTV002&apos;) || 
+ISPICKVAL( model__c ,&apos; HTV003&apos;) ) &amp;&amp;  ISBLANK(  screen_size__c  )</errorConditionFormula>
+    <errorMessage>enter the screen size for the TV</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>blood_donor_view_access</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>able to view all the records in the same district</description>
+        <label>blood donor view access</label>
+        <sharedTo>
+            <role>chennai_dst_cs</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>chennai_dst_cs</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

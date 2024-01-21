@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="fetch api diy 11">
+   <lightning-button label="click" variant="brand" onclick={handleclick}>
+     
+   </lightning-button>
+        <template if:true={employeeInfo} >
+       <template for:each={employeeInfo} for:item="emp">
+      <div class="slds-var-m-around_medium" key={emp.Code}>
+        <img src={emp.url} alt ="employeepicture"></img><br/>
+        Name   : {emp.Name}<br/>
+        Email  :{emp.Email}<br/>
+        Salary :{emp.Salary}<br/>
+        Code   :{emp.Code}<br/>
+
+      </div>
+
+       
+       </template>
+      
+        </template>
+    </lightning-card>
+</template>

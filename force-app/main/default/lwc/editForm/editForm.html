@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Case study  Create Contact">
+        <lightning-record-edit-form object-api-name="Contact" onsuccess={handlesuccess} onsubmit={handlesubmit} >
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_6-of-12">
+<lightning-input-field field-name="LastName" class="firstfield"></lightning-input-field>
+<lightning-input-field field-name="First_name__c" ></lightning-input-field>
+
+
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+            <lightning-input-field field-name="Birth_Name__c" ></lightning-input-field>
+            <lightning-input-field field-name="Email" class="efield" ></lightning-input-field>
+            <lightning-input-field field-name=Department__c ></lightning-input-field>
+
+            <lightning-input-field field-name="AccountId" ></lightning-input-field>
+            
+
+        </div>
+
+ </div>
+ <lightning-button type="reset" label="cancel" variant="brand"></lightning-button>
+ <lightning-button type="submit" label="save" variant="brand"></lightning-button>
+    
+    
+        </lightning-record-edit-form>
+    
+    </lightning-card>
+    
+</template>

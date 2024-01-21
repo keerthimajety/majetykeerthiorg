@@ -1,0 +1,14 @@
+<template>
+    <lightning-carousel>
+        <template for:each ={pictureInfo} for:item="picture">
+        <lightning-carousel-image key={picture.name}
+        src = {picture.url}
+        header = {picture.name}
+        description = {picture.description}
+        href = {pictureLink}
+        tabindex= 0
+        >
+    </lightning-carousel-image>
+</template>
+    </lightning-carousel>   
+</template>

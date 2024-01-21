@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>details of jobs and applications</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>jobs software</label>
+    <navType>Standard</navType>
+    <tabs>job_application__c</tabs>
+    <tabs>job_position__c</tabs>
+    <tabs>applicants__c</tabs>
+    <tabs>Blood_Coordination__c</tabs>
+    <tabs>Orderc__c</tabs>
+    <tabs>employee__c</tabs>
+    <tabs>Feedback__c</tabs>
+    <tabs>Department__c</tabs>
+    <tabs>Customer_Project__c</tabs>
+    <tabs>Customer__c</tabs>
+    <tabs>Contact_Relationship__c</tabs>
+    <tabs>Zone__c</tabs>
+    <tabs>Store__c</tabs>
+    <tabs>Market__c</tabs>
+    <tabs>DmlError__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>jobs_software_UtilityBar</utilityBar>
+</CustomApplication>

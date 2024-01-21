@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>test flow</description>
+    <environments>Default</environments>
+    <interviewLabel>test demo flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>test demo flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <description>test main screen</description>
+        <name>main_screen</name>
+        <label>main screen</label>
+        <locationX>554</locationX>
+        <locationY>270</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>go back</backButtonLabel>
+        <connector>
+            <targetReference>second_screen</targetReference>
+        </connector>
+        <fields>
+            <name>main_content</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(202, 19, 19);&quot;&gt;&lt;em&gt;welcome to salesforce test demo&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>enter_the_name</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue>welcome</stringValue>
+            </defaultValue>
+            <fieldText>enter the name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>&lt;p&gt;we have to enter only 10charecters&lt;/p&gt;</errorMessage>
+                <formulaExpression>LEN({!enter_the_name})&lt;=10</formulaExpression>
+            </validationRule>
+        </fields>
+        <nextOrFinishButtonLabel>go</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>second screen</description>
+        <name>second_screen</name>
+        <label>second screen</label>
+        <locationX>780</locationX>
+        <locationY>421</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>thankyou</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-family: sans-serif; font-size: 14px; color: rgb(54, 49, 218);&quot;&gt;&lt;em&gt;Thankyou for your oder&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>336</locationX>
+        <locationY>125</locationY>
+        <connector>
+            <targetReference>main_screen</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+</Flow>

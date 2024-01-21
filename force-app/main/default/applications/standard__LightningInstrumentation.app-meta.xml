@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>LightningInstrumentation</label>
+    <navType>Standard</navType>
+    <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Blood_donor__c</tabs>
+    <tabs>blood_request__c</tabs>
+    <tabs>applicants__c</tabs>
+    <tabs>job_application__c</tabs>
+    <tabs>job_position__c</tabs>
+    <tabs>Blood_Coordination__c</tabs>
+    <tabs>Orderc__c</tabs>
+    <tabs>employee__c</tabs>
+    <tabs>Feedback__c</tabs>
+    <tabs>Department__c</tabs>
+    <tabs>Customer_Project__c</tabs>
+    <tabs>Customer__c</tabs>
+    <tabs>Contact_Relationship__c</tabs>
+    <tabs>Zone__c</tabs>
+    <tabs>Store__c</tabs>
+    <tabs>Market__c</tabs>
+    <tabs>DmlError__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

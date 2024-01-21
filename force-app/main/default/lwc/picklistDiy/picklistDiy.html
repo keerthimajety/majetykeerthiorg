@@ -1,0 +1,25 @@
+<template>
+
+    <lightning-card title="Day 21 DIY">
+        <lightning-button label="click" onclick={handleclick}></lightning-button>
+      <lightning-combobox
+   name="RecordType"
+   label="Select Record type"
+   value={value}
+   placeholder="RecordtypeId"
+   options={recordtypeoptions}
+   onchange={handlechange}
+    ></lightning-combobox>
+ 
+
+<lightning-combobox
+name="Picklistvalues"
+label="Industry"
+value={value1}
+placeholder="Picklist values"
+options={Industryoptions}
+onchange={handleChange2} ></lightning-combobox>
+
+
+</lightning-card>
+</template>

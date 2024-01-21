@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>priority_change</fullName>
+    <active>true</active>
+    <description>The error displays if the priority changes from high to low.</description>
+    <errorConditionFormula>AND(ISCHANGED( priority_field__c ),ISPICKVAL( priority_field__c,&quot;low&quot;))</errorConditionFormula>
+    <errorMessage>priority should not changed to low</errorMessage>
+</ValidationRule>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title ='DataBinding Demo'>
+        <div class = "slds-var-m-around_medium">
+                  welcome   {name}</br>
+                  {person.name}</br>
+                  {friendlist}
+                  {discount}
+    </div>
+    <lightning-input name="first inputbox" type="text" label="Enter the name" onchange ={handlechange}></lightning-input>
+    <lightning-input name="second inputbox" type="text" label="Enter the last name" onchange ={handlechange}></lightning-input>
+    <div class="slds-m-top_small slds-m-bottom_medium">
+    <lightning-button variant="brand" label="Enter" title="gives the values you entered" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+</div>
+
+
+<div class="slds-m-vertical_medium">
+    <p> Firstname is {firstname} Lastname is {lastname} uppercase is {upperC}</p>
+</div>
+   
+   
+    </lightning-card>
+   
+</template>

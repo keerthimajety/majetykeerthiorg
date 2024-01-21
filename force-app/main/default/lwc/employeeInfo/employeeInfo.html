@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Employee list">
+        <ul>
+   <template for:each= {filteredEmplist} for:item ="emp">
+          <li class="slds-item" key = {emp.id}>
+            Id = {emp.id}</br>
+            Name = {emp.name} 
+            
+          </li>
+   </template>
+</ul>
+        <p slot="footer">
+            <lightning-layout pull-to-boundary="small">
+              <lightning-layout-item flexibility="auto" padding="horizontal-small">
+             <lightning-input type="text" placeholder="enter the name" variant="label-hidden"  onchange={handlechange}>
+     
+             </lightning-input>
+         </lightning-layout-item>
+             
+              <lightning-layout-item >
+                 <lightning-button label="Find" variant ="brand" onclick={handleClick}></lightning-button>
+              </lightning-layout-item>
+     
+            </lightning-layout>
+         
+         </p>
+     
+    </lightning-card>
+</template>

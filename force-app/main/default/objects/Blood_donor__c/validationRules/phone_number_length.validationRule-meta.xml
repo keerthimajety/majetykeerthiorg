@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>phone_number_length</fullName>
+    <active>true</active>
+    <description>checks wether the phone number is 10 digits and its only number not alphabets</description>
+    <errorConditionFormula>( VALUE(phone__c ) &lt;10000000000)&amp;&amp;(VALUE(phone__c )&gt;90000000000)&amp;&amp; ISNUMBER(phone__c)</errorConditionFormula>
+    <errorMessage>The phone number should be 10 digits and it should be a number</errorMessage>
+</ValidationRule>

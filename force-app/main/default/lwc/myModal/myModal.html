@@ -1,0 +1,47 @@
+<template>
+        <lightning-modal-header label="Create Receipt"></lightning-modal-header>
+        <lightning-modal-body> 
+            <lightning-record-form 
+            object-api-name="Receipt__c"
+            fields={fields}
+            
+            columns="1"
+            
+            mode="edit"
+            onsuccess={handlesuccess}></lightning-record-form>
+          <!--  <lightning-record-edit-form object-api-name="Receipt__c" onsuccess={handlesuccess} onsubmit={handlesubmit} >
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_6-of-12">
+            <lightning-input-field field-name="Amount__c" class="firstfield"></lightning-input-field>
+            <lightning-input-field field-name="Receipt_Id__c" ></lightning-input-field>
+            
+            
+                    </div>
+                    <div class="slds-col slds-size_6-of-12">
+                        <lightning-input-field field-name="Mode_of_Pay__c" ></lightning-input-field>
+                        <lightning-input-field field-name="Amount_Paid_Date__c" class="efield" ></lightning-input-field>
+                        
+            
+                        
+            
+                    </div>
+            
+             </div>
+             <lightning-button type="reset" label="cancel" variant="brand"></lightning-button>
+             <lightning-button type="submit" label="save" variant="brand"></lightning-button>
+                
+                
+                    </lightning-record-edit-form>
+
+           
+<lightning-input type="text" label="Receipt Id" name="Receipt_Id__c" onchange={handlechange}></lightning-input>
+<lightning-input type="text" label="Amount" name="Amount__c" onchange={handlechange}></lightning-input>
+<lightning-input type="date" label="amount paid date" name="Amount_Paid_Date__c" onchange={handlechange}></lightning-input>
+<lightning-input type="text" label="mode of pay" name="Mode_of_Pay__c" onchange={handlechange}></lightning-input>-->
+
+
+        </lightning-modal-body>
+        <lightning-modal-footer>
+           <!-- <lightning-button label="close" onclick={handleOkay}></lightning-button>-->
+        </lightning-modal-footer>
+    </template>

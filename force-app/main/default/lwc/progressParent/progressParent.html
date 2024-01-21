@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Action Progress">
+<lightning-button label="start" onclick={handleclick} variant="brand"></lightning-button>
+<lightning-button label="stop" onclick={handlestop} variant="brand" class="stopbutton"></lightning-button>
+<c-progress-child  onprogress={handleonprogress} progressstop={stopenable}></c-progress-child>
+    </lightning-card>
+</template>

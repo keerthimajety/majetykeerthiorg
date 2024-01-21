@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test_rollup_field__c</fullName>
+    <description>sum of contacts</description>
+    <externalId>false</externalId>
+    <label>test rollup field</label>
+    <summaryForeignKey>Customer__c.Account__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>

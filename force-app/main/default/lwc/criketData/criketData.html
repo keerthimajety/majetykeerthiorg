@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Indian Cricketers Info">
+    <!---
+        <lightning-carousel>
+            <template for:each ={criketerInfo} for:item="criketer">
+            <lightning-carousel-image key={criketer.name}
+            src = {criketer.url}
+            header = {criketer.name}
+            description = {criketer.description}
+            href = "https://www.bcci.tv/"
+            tabindex= 0
+            >
+        </lightning-carousel-image>
+    </template>
+        </lightning-carousel>
+    -->
+    <c-basic-carousel picture-info={criketerInfo} picture-link="https://www.bcci.tv/"></c-basic-carousel>
+    </lightning-card>
+</template>

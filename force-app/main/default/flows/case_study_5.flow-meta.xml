@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>chk_for_case_reopen</name>
+        <label>chk for case reopen</label>
+        <locationX>543</locationX>
+        <locationY>254</locationY>
+        <defaultConnector>
+            <targetReference>final_screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>if not reopened</defaultConnectorLabel>
+        <rules>
+            <name>if_reopened</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>reopenres</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>case_update</targetReference>
+            </connector>
+            <label>if reopened</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <name>feasabilitypklstres</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Feasability__c</picklistField>
+        <picklistObject>Feedback__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ratingpklstres</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Resolution_Rating__c</picklistField>
+        <picklistObject>Feedback__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>reopenres</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Reopen_case__c</picklistField>
+        <picklistObject>Feedback__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>resolutionpklstres</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Resolution_Type__c</picklistField>
+        <picklistObject>Feedback__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>case study 5 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>case study 5</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>create_feedback</name>
+        <label>create feedback</label>
+        <locationX>392</locationX>
+        <locationY>250</locationY>
+        <connector>
+            <targetReference>chk_for_case_reopen</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CaseId__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Feasability__c</field>
+            <value>
+                <elementReference>feasability</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Reopen_case__c</field>
+            <value>
+                <elementReference>reopen_case</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Resolution_Rating__c</field>
+            <value>
+                <elementReference>resolution_rating</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Resolution_Type__c</field>
+            <value>
+                <elementReference>resolution_type</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>comments__c</field>
+            <value>
+                <elementReference>comments</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Feedback__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>case_update</name>
+        <label>case update</label>
+        <locationX>721</locationX>
+        <locationY>250</locationY>
+        <connector>
+            <targetReference>final_screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>feedback_input</name>
+        <label>feedback input</label>
+        <locationX>252</locationX>
+        <locationY>249</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>create_feedback</targetReference>
+        </connector>
+        <fields>
+            <name>resolution_rating</name>
+            <choiceReferences>ratingpklstres</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>resolution rating</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>resolution_type</name>
+            <choiceReferences>resolutionpklstres</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>resolution type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>feasability</name>
+            <choiceReferences>feasabilitypklstres</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>feasability</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>reopen_case</name>
+            <choiceReferences>reopenres</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>reopen case?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>comments</name>
+            <dataType>String</dataType>
+            <fieldText>comments</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>final_screen</name>
+        <label>final screen</label>
+        <locationX>644</locationX>
+        <locationY>508</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>msg</name>
+            <fieldText>&lt;p&gt;Thankyou&lt;/p&gt;&lt;p&gt;feedback updated&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>362</locationX>
+        <locationY>56</locationY>
+        <connector>
+            <targetReference>feedback_input</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

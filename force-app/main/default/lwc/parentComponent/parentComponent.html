@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+
+        <p slot="actions">
+        <lightning-button label="Reset" onclick={handleclick}></lightning-button>
+        </p>
+
+        <lightning-input label="Enter the value" value={slidervalue} onchange={handlechange}></lightning-input>
+        <c-slider-component slidervalue={slidervalue}></c-slider-component>
+    </lightning-card>
+    
+</template>

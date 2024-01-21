@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>product_is_approved</fullName>
+        <description>product is approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>majetykeerthi@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>product_approval_folder/product_approval_response</template>
+    </alerts>
+    <alerts>
+        <fullName>product_is_rejected</fullName>
+        <description>product is rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>majetykeerthi@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>product_approval_folder/product_rejection_respone</template>
+    </alerts>
+    <alerts>
+        <fullName>product_is_send_for_approval</fullName>
+        <description>product is send for approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>majetykeerthi@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>product_approval_folder/product_approval</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>approval_status_update</fullName>
+        <field>status__c</field>
+        <literalValue>awaiting approval</literalValue>
+        <name>approval status update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>field_if_product_rejected</fullName>
+        <field>status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>field if product rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>field_update_if_approved</fullName>
+        <field>status__c</field>
+        <literalValue>Ready for sale</literalValue>
+        <name>field update if approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

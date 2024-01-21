@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>ABC home appliences</label>
+    <navType>Standard</navType>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Orderc__c</tabs>
+    <tabs>employee__c</tabs>
+    <tabs>Feedback__c</tabs>
+    <tabs>Department__c</tabs>
+    <tabs>Customer_Project__c</tabs>
+    <tabs>Customer__c</tabs>
+    <tabs>Contact_Relationship__c</tabs>
+    <tabs>Zone__c</tabs>
+    <tabs>Store__c</tabs>
+    <tabs>Market__c</tabs>
+    <tabs>DmlError__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>ABC_home_appliences_UtilityBar</utilityBar>
+</CustomApplication>

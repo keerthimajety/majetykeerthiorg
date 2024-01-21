@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Day 22 Apex">
+        <lightning-combobox
+        name="Rating Values"
+        label="Rating"
+        value={value}
+        placeholder="Rating selection"
+        options={ratingoptions}
+        onchange={handleChange} ></lightning-combobox>
+          <template if:true={accountList} >
+            <template for:each={accountList} for:item="account">
+                <div class="slds-var-m-around_medium" key={account.Name}>
+                    {account.Name}<br/>
+                    {account.Rating}
+                </div>
+            </template>
+        </template>
+        </lightning-card>
+</template>
